@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <fieldset>
+            <legend>personal info</legend>
+
+      <form action="https://httpbin.org/get" method="get">
+<p>
+        <label for="firstName">first Name :</label>
+        <input type="text" id="firstName" name="firstName" required
+        autocomplete="on" placeholder="first-Name">
+    </p>     
+    <p>
+        <label for="lastName">Last Name :</label>
+        <input type="text" name="lastName" id="lastName" 
+        placeholder="Last-Name" autocomplete="on"required>
+    </p>
+    <p>
+        <label for="password">password :</label>
+        <input type="password" name="password" id="password" 
+        placeholder="enter your password"required>
+    </p>
+    <p>
+        <label for="phone">Mobile No :</label>
+        <input type="tel" name="phone" id="phone" 
+        placeholder="Enter your number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+    </p>
+
+    <p>
+        <label for="decade">Enter your fav deacde :</label>
+        <input type="number" name="lastName" id="decade" 
+        placeholder="Last-Name" required>
+    </p>
+
+    <p>
+        <label for="decade">Enter your fav deacde :</label>
+        <input type="number" name="lastName" id="decade" 
+        placeholder="Last-Name" min="1939" max="2050" srequiredtep="1" value="2024">
+    </p>
+
+    <p>
+       <label for="content">fav content</label>
+       <select  name="content" id="content"  >
+        <optgroup label="section-a">
+            <option value="frontend">frontend</option>
+            <option value="frontend">frontend</option>
+        </optgroup>
+
+    <optgroup label="section-b">
+            <option value="frontend">frontend</option>
+            <option value="frontend">frontend</option>
+        </optgroup>
+
+    <optgroup label="section-">
+            <option value="frontend" selected>frontendfegggg</option>
+            <option value="frontend">frontend</option>
+            <option value="frontend">frontend</option>
+        </optgroup>
+
+       </select> 
+    </p>
+
+
+
+<p>
+    <label for="copy">select your copy</label>
+   <input type="text" name="copy" id="copy" list="content-list">
+        <datalist id="content-list">
+        <option value="front">front</option>
+        <option value="end">end</option>
+        <option value="middle">middle</option>
+    </select>
+</p>
+
+      
+    </fieldset>
+
+    <fieldset>
+        <legend>favourite food</legend>
+       <p> <input type="radio" name="food" id="chicken" value="chicken">
+        <label for="chicken">chicken</label>
+    </p>
+
+    <p> <input type="radio" name="food" id="mutton" value="mutton">
+        <label for="mutton">mutton</label>
+    </p>
+
+    <p> <input type="radio" name="food" id="fish" value="fish">
+        <label for="fish">fish</label>
+    </p>
+    
+    </fieldset>
+
+    <fieldset>
+        <legend>fav pet</legend>
+        
+        <input type="checkbox" name="pet" id="dog" value="pet">
+        <label for="dogs">dogs</label>
+
+        <input type="checkbox" name="pet" id="bear" value="pet">
+        <label for="bear">bear</label> 
+
+        <input type="checkbox" name="pet" id="cat" value="pet">
+        <label for="cat">cat</label>
+    </fieldset>
+    <fieldset><legend>comment your opoinon</legend>
+    <textarea name="" id="" cols="59" rows="10" placeholder="enter your opinion"></textarea>
+</fieldset>
+<button type="submit" formaction="https://httpbin.org/post" formmethod="post">submit</button>
+<button type="reset">reset</button>
+</form> 
+    </main>
+</body>
+</html>
